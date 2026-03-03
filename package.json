@@ -12,6 +12,7 @@
 		"format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
 	},
 	"dependencies": {
+		"@clerk/nextjs": "^5.7.5",
 		"@google/generative-ai": "^0.24.1",
 		"@prisma/client": "^5.21.1",
 		"@radix-ui/react-slot": "^1.2.4",
