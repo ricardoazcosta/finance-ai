@@ -1,8 +1,7 @@
 import { auth } from "@clerk/nextjs/server";
-import { LogIn } from "lucide-react";
 import Image from "next/image";
 import { redirect } from "next/navigation";
-import { Button } from "../_components/ui/button";
+import { ClerkSignInButton } from "../_components/auth/sign-in-button";
 
 const LoginPage = async () => {
 	const { userId } = await auth();
@@ -20,10 +19,7 @@ const LoginPage = async () => {
 					suas movimentações, e oferecer insights personalizados, facilitando o controle
 					do seu orçamento.
 				</p>
-				<Button variant={"outline"}>
-					<LogIn className="mr-2" />
-					Fazer Login ou criar conta
-				</Button>
+				<ClerkSignInButton />
 			</div>
 			{/*DIREITA*/}
 			<div className="relative h-full w-full">
