@@ -36,3 +36,6 @@ yarn-error.log*
 next-env.d.ts
 .vscode/
 .loop/
+# script para commits
+commit.sh
+commit.ps1
